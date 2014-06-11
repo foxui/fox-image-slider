@@ -1,0 +1,57 @@
+<fox-element name="fox-image-slider" attributes="auto loop speed index indicator">
+    <fox-template>
+        <content></content>
+        <fox-slider id="fox-slider" auto="3000" loop="true" speed="400"  indicator="true"  style="height: 100%;" >
+            <fox-slider-item rv-each-data="json">
+                <div class="img" rv-background-image="data.img"></div>
+                <h1>{data.title}</h1>
+                <a rv-if="data.link" rv-href="data.link"></a>
+            </fox-slider-item>
+        </fox-slider>
+
+    </fox-template>
+
+    <script>
+		var dataArr;
+
+		function buildData(json) {
+		    var self = this;
+			dataArr = JSON.parse(json);
+			this.$['fox-slider'].json = dataArr;
+			this.$['fox-slider'].indicator = true;
+			["auto loop speed index indicator"].split(" ").forEach(function(attr){
+			    this.$['fox-slider'][attr] = self[attr];
+			});
+		}
+
+		fox("fox-image-slider", {
+			lifecycle : {
+				created : function() {
+					var self = this;
+					var foxJson = this.querySelector('fox-json');
+
+					if (foxJson) {
+
+						buildData.call(this, foxJson.getAttribute("data"));
+
+						foxJson.addEventListener("dataChanged", function(e) {
+							buildData.call(self, e.detal.newVal);
+						}, false);
+					}
+				},
+				attributeChanged:function(attr,oldVal,newVal){
+				    this.$['fox-slider'][attr] = newVal;
+				}
+			},
+			methods:{
+			    prev : function() {
+                    this.$['fox-slider'].prev();
+                },
+                next : function() {
+                    this.$['fox-slider'].next();
+                }
+			}
+		});
+    </script>
+
+</fox-element>

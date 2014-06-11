@@ -1,0 +1,6 @@
+[submodule "fox-slider"]
+	path = fox-slider
+	url = https://github.com/foxui/fox-slider
+[submodule "fox-core"]
+	path = fox-core
+	url = https://github.com/foxui/fox-core
