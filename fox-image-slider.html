@@ -4,8 +4,8 @@
         <fox-slider id="fox-slider" auto="3000" loop="true" speed="400"  indicator="true"  style="height: 100%;" >
             <fox-slider-item rv-each-data="json">
                 <div class="img" rv-background-image="data.img"></div>
-                <h1>{data.title}</h1>
-                <a rv-if="data.link" ></a>
+                <div class="title">{data.title}</div>
+                <a rv-if="data.link" rv-href="data.link"></a>
             </fox-slider-item>
         </fox-slider>
 
