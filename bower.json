@@ -1,8 +1,8 @@
 {
-  "name": "fox-dialog",
+  "name": "fox-image-slider",
   "private": true,
   "dependencies": {
     "fox-core": "https://github.com/foxui/fox-core.git",
-    "fox-image-slider":"https://github.com/foxui/fox-image-slider.git"
+    "fox-slider":"https://github.com/foxui/fox-slider.git"
   }
 }
