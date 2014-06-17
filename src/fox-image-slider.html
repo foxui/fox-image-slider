@@ -19,8 +19,8 @@
 			dataArr = JSON.parse(json);
 			this.$['fox-slider'].json = dataArr;
 			this.$['fox-slider'].indicator = true;
-			["auto loop speed index indicator"].split(" ").forEach(function(attr){
-			    this.$['fox-slider'][attr] = self[attr];
+			"auto loop speed index indicator".split(" ").forEach(function(attr){
+			    self.$['fox-slider'][attr] = self[attr];
 			});
 		}
 
