@@ -1,0 +1,25 @@
+{
+    "title": "fox-image-slider",
+    "description": "schema of fox-image-slider data source ",
+    "type": "array",
+    "items":{
+    	"type":"object",
+    	"properties":{
+    		"title":{
+    			"type":"string",
+    			"description": "slider item title"
+    		},
+    		"img":{
+    			"type":"string",
+    			"description": "url of the image"
+    		},
+    		"link":{
+    			"type":"string",
+    			"description": "url of detail"
+    		}
+    		
+    	},
+    	"required": ["img"]
+    }
+    
+}
