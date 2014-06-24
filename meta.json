@@ -4,13 +4,9 @@
 			"fox-core/dist/foxui.js"
 		],
 		"css": [
-			"fox-core/dist/foxui.css",
-			"fox-slider/dist/fox-slider.css",
-			"fox-image-slider/dist/fox-image-slider.css"
+			"fox-core/dist/foxui.css"
 		],
 		"import": [
-			"fox-json/dist/fox-json.html",
-			"fox-slider/dist/fox-slider.html",
 			"fox-image-slider/dist/fox-image-slider.html"
 		]
 	},
