@@ -1,4 +1,19 @@
 {
+	"dependencies": {
+		"js": [
+			"fox-core/dist/foxui.js"
+		],
+		"css": [
+			"fox-core/dist/foxui.css",
+			"fox-slider/dist/fox-slider.css",
+			"fox-image-slider/dist/fox-image-slider.css"
+		],
+		"import": [
+			"fox-json/dist/fox-json.html",
+			"fox-slider/dist/fox-slider.html",
+			"fox-image-slider/dist/fox-image-slider.html"
+		]
+	},
 	"name":"fox-image-slider",
 	"type":"component",
 	"mockdata":"data.json",
@@ -19,19 +34,19 @@
 		"displayName":"移动速度",	
 		"default":300,
 		"type":"number",
-		"desc":"卡片的移动速度",
+		"desc":"卡片的移动速度"
 	},{
 		"name":"speed",
 		"displayName":"移动速度",	
 		"default":300,
 		"type":"number",
-		"desc":"卡片的移动速度",
+		"desc":"卡片的移动速度"
 	},{
 		"name":"indicator",
 		"displayName":"指示器",	
 		"default":true,
 		"type":"boolean",
-		"desc":"是否开启指示器",
+		"desc":"是否开启指示器"
 	}],
 	"methods":[{
 		"name":"prev",
@@ -55,7 +70,6 @@
 			"name":"el",
 			"displayName":"当前节点",
 			"type":"element"
-		}];
-	}];
-
+		}]
+	}]
 }
