@@ -1,6 +1,19 @@
 {
 	"dependencies": {
+<<<<<<< HEAD
+=======
+		"js": [
+			"fox-core/dist/foxui.js"
+		],
+		"css": [
+			"fox-core/dist/foxui.css",
+			"fox-slider/dist/fox-slider.css",
+			"fox-image-slider/dist/fox-image-slider.css"
+		],
+>>>>>>> f5830817693f544370a35bf832ba15a46531b4c3
 		"import": [
+			"fox-json/dist/fox-json.html",
+			"fox-slider/dist/fox-slider.html",
 			"fox-image-slider/dist/fox-image-slider.html"
 		]
 	},
